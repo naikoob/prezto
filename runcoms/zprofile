@@ -16,15 +16,13 @@ fi
 #
 # Editors
 #
-
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='code -w'
+export VISUAL='code -w'
 export PAGER='less'
 
 #
 # Language
 #
-
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
@@ -32,6 +30,7 @@ fi
 #
 # Paths
 #
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
