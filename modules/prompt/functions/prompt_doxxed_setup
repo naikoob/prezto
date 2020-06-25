@@ -44,7 +44,7 @@ function prompt_doxxed_end_segment {
 }
 
 function prompt_doxxed_build_prompt {
-  prompt_doxxed_start_segment 234 yellow '%(?::%F{red}✘ )%(!:%F{yellow}⚡ :)%(1j:%F{cyan}⚙ :)%F{yellow}%n@%m%f'
+  prompt_doxxed_start_segment 235 yellow '%(?::%F{red}✘ )%(!:%F{yellow}⚡ :)%(1j:%F{cyan}⚙ :)%F{yellow}%n@%m%f'
   prompt_doxxed_start_segment blue black '$_prompt_doxxed_pwd'
 
   if [[ -n "$git_info" ]]; then
@@ -121,8 +121,8 @@ function prompt_doxxed_setup {
   zstyle ':prezto:module:editor:info:completing' format '%B%F{red}...%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{blue}❯%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format '%F{red}♺%f'
-  zstyle ':prezto:module:editor:info:keymap:alternate' format '%B%F{red}❮%f%b'
-
+  zstyle ':prezto:module:editor:info:keymap:alternate' format '%B%F{red}❮%f%b' 
+ 
   # Set git-info parameters.
   zstyle ':prezto:module:git:info' verbose 'yes'
   zstyle ':prezto:module:git:info:action' format ' ⁝ %s'
