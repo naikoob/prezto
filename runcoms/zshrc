@@ -21,11 +21,6 @@ eval "$(pyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
-# load openshift completion
-if type "oc" > /dev/null; then
-  source <(oc completion zsh)
-fi
-
 # alias
 alias ls='ls -FGh'
 alias ll='ls -l'
