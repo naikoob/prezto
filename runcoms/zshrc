@@ -14,13 +14,6 @@ export EDITOR="code -w"
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 #export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.6)      # Graalvm CE
 
-# setup pyenv
-eval "$(pyenv init -)"
-
-# setup nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
 # alias
 alias ls='ls -FGh'
 alias ll='ls -l'

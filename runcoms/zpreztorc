@@ -36,6 +36,9 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'ssh' \
   'completion' \
+  'ruby' \
+  'python' \
+  'node' \
   'oc' \
   'osx' \
   'git' \
